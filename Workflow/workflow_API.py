@@ -4,7 +4,7 @@ This Module contains Generic Data Processing APIs for HPC Datasets.
 """
 import re
 import os
-import HISyn_copy.tools.Log as log
+import Inpows.tools.Log as log
 
 import pandas as pd
 

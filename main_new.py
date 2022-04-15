@@ -2,19 +2,19 @@ import sys
 import os
 
 sys.path.insert(0, '..')
-from HISyn_copy.tools.root_directory import root_dir
-import HISyn_copy.tools.Log as log
+from Inpows.tools.root_directory import root_dir
+import Inpows.tools.Log as log
 
 
 def run_HISyn(domain, text='', index=0):
     # get query from test cases
 
-    import HISyn_copy.front_end.front_end_function_kit as front_kit
+    import Inpows.front_end.front_end_function_kit as front_kit
     if not text:
         text = front_kit.read_text(root_dir + '/Documentation/' + domain + '/text_new.txt', index)
 
     # Build grammar graph
-    import HISyn_copy.domain_knowledge.DomainKnowledgeConstructor as dkc
+    import Inpows.domain_knowledge.DomainKnowledgeConstructor as dkc
     gg = dkc.set_grammar_graph(domain, root_dir + '/Documentation/' + domain + '/grammar_adv.txt',
                                root_dir + '/Documentation/' + domain + '/API_document_adv.txt', reload=True)
 
@@ -25,12 +25,12 @@ def run_HISyn(domain, text='', index=0):
     nlp.displayByEdge()
     front_kit.domain_specfic_parsing_rules(domain, nlp, gg)
 
-    import HISyn_copy.common_knowledge.NLPCommonKnowledge as nlpck
+    import Inpows.common_knowledge.NLPCommonKnowledge as nlpck
     front_kit.prune_edges(nlp, nlpck.prunable_dep_tags, nlpck.prunable_pos_tags, nlpck.common_knowledge_tags)
 
     nlp.displayByEdge()
 
-    import HISyn_copy.back_end.back_end_function_kit as back_kit
+    import Inpows.back_end.back_end_function_kit as back_kit
 
     back_kit.semantic_mapping(domain, gg, nlp, nlpck.common_knowledge_tags)
 
@@ -216,11 +216,11 @@ if __name__ == '__main__':
     text = q13
 
 
-    import HISyn_copy.DSSplit.DSL_ontology_split as dsp
-    import HISyn_copy.domain_knowledge.Ontology.sparql as sparql
+    import Inpows.DSSplit.DSL_ontology_split as dsp
+    import Inpows.domain_knowledge.Ontology.sparql as sparql
 
-    import HISyn_copy.sparql.sparql as sq
-    import HISyn_copy.Workflow.workflow_API as wf
+    import Inpows.sparql.sparql as sq
+    import Inpows.Workflow.workflow_API as wf
 
     while 1:
         module = input("\n\nEnter the module you want to access \n (Enter : 1) Workflow Synthesis \n (Enter : 2) DS Split \n (Enter : 0) Exit\n")

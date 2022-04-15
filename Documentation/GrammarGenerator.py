@@ -1,8 +1,8 @@
 import sys
 import os
 sys.path.insert(0, '../..')
-import HISyn_copy.tools.Log as log
-from HISyn_copy.tools.root_directory import root_dir
+import Inpows.tools.Log as log
+from Inpows.tools.root_directory import root_dir
 
 
 class nt:

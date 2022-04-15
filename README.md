@@ -1,7 +1,7 @@
 # INPOWS
 
 INPOWS is a workflow synthesis framework that generates the workflow expressions which can be directly executed inside a Python script.
-INPOWS referes to **I**nteractive **N**LU-**P**owered **O**ntology-based **W**orkflow **S**ynthesis. INPOWS allows the use of Natural Language for queries, maximizes the robustness in handling concepts and language ambiguities through an interactive ontology-based design, and achieves superior extensibility by adopting a synthesis algorithm powered by Natural Language Understanding. When being integrated into a FAIR data management system for HPC, INPOWS shows the efficacy in enabling flexible, robust, and extensible workflow synthesis. The overall framework of INPOWS is shown in the figure: [framework.pdf](https://github.com/mithildave/HISyn_copy/files/8494151/framework.pdf)
+INPOWS referes to **I**nteractive **N**LU-**P**owered **O**ntology-based **W**orkflow **S**ynthesis. INPOWS allows the use of Natural Language for queries, maximizes the robustness in handling concepts and language ambiguities through an interactive ontology-based design, and achieves superior extensibility by adopting a synthesis algorithm powered by Natural Language Understanding. When being integrated into a FAIR data management system for HPC, INPOWS shows the efficacy in enabling flexible, robust, and extensible workflow synthesis. The overall framework of INPOWS is shown in the figure: [framework.pdf](https://github.com/mithildave/Inpows/files/8494151/framework.pdf)
 
 
 ## Deployment
@@ -18,7 +18,7 @@ INPOWS referes to **I**nteractive **N**LU-**P**owered **O**ntology-based **W**or
 python -m pip install -r requirements.txt
 ```
 
-4. After cloning this repository, you also need to download the required third party packages. Refer to the instruction in [third_party_packages](https://github.com/mithildave/HISyn_copy/blob/main/third_party_pkgs/README.md) 
+4. After cloning this repository, you also need to download the required third party packages. Refer to the instruction in [third_party_packages](https://github.com/mithildave/Inpows/blob/main/third_party_pkgs/README.md) 
 
 
 ## Execution
@@ -38,7 +38,7 @@ The experiments have been conducted in two separate parts. Workflow synthesis mo
 
 ## Result Data
 
-The result data is provided in the [excel sheet](https://github.com/mithildave/HISyn_copy/blob/main/Experiments/Artifact%20Description.xlsx). There are two separate sheets named "Synthesis Accuracy" and "DS_Split Accuracy". These sheets each have 3 tables. 
+The result data is provided in the [excel sheet](https://github.com/mithildave/Inpows/blob/main/Experiments/Artifact%20Description.xlsx). There are two separate sheets named "Synthesis Accuracy" and "DS_Split Accuracy". These sheets each have 3 tables. 
 
 Inside the sheet "Synthesis Accuracy" there are five columns in each table, "No., Query, Result, Accuracy from formatted query,NL Accuracy". Here is the description of each column:
 
@@ -59,4 +59,4 @@ Inside the sheet "DS_Split Accuracy" there are five columns in each table, "No.,
 5. Accuracy w/ interaction - accuracy when user interacts with the module to select best suited result (0:Fail,1:Pass)
 ```
 
-The consolidated results can be visualized using this chart. [accuracy_chart.pdf](https://github.com/mithildave/HISyn_copy/files/8494206/accuracy.1.pdf)
+The consolidated results can be visualized using this chart. [accuracy_chart.pdf](https://github.com/mithildave/Inpows/files/8494206/accuracy.1.pdf)

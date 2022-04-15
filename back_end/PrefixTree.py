@@ -1,4 +1,4 @@
-import HISyn_copy.tools.Log as log
+import Inpows.tools.Log as log
 
 class Prefix_tree_node:
     def __init__(self, name):

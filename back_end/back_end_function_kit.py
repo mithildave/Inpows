@@ -1,6 +1,6 @@
-import HISyn_copy.tools.Log as log
-import HISyn_copy.front_end.NLP as NLP
-from HISyn_copy.tools.root_directory import root_dir
+import Inpows.tools.Log as log
+import Inpows.front_end.NLP as NLP
+from Inpows.tools.root_directory import root_dir
 
 import os
 import re
@@ -74,7 +74,7 @@ def domain_specific_mapping_rules(domain, nlp):
     ds_func_path = root_dir + '/domain_knowledge/' + domain + '/domain_specific_function_kit.py'
     if os.path.exists(ds_func_path):
         import importlib
-        ds_func_kit = importlib.import_module('HISyn_copy.domain_knowledge.' + domain + '.domain_specific_function_kit')
+        ds_func_kit = importlib.import_module('Inpows.domain_knowledge.' + domain + '.domain_specific_function_kit')
         ds_func_kit.special_mapping_rules(nlp)
         log.log('domain specific rules applied.')
     else:
@@ -842,7 +842,7 @@ def attach_non_sibling_edges(nlp, gg, dependent_dict, dep_dict, new_dep_size_lim
 ################### Path End ###################
 
 ############## Prefix tree related operations #############
-from HISyn_copy.back_end.PrefixTree import Prefix_tree
+from Inpows.back_end.PrefixTree import Prefix_tree
 def build_prefix_tree(path, api_dict):
     pt = Prefix_tree()
     for p in path:
@@ -1117,7 +1117,7 @@ def combine_trees(cgt1_node, cgt2):
         return False
 
 
-from HISyn_copy.back_end.CGTree import CG_tree
+from Inpows.back_end.CGTree import CG_tree
 # change current prefix trees and all root-paths into code generation tree
 # prefix tree and cgt has different join rules.
 def prefix_tree_to_cg_tree(gg, root_dep_list, path_dict, root_index):
@@ -1520,7 +1520,7 @@ def delete_invalid_tree(final_CG_tree_list, incomplete_node_list):
 
 
 # Complete a single branch with default arguments
-from HISyn_copy.back_end.CGTree import CG_tree_node
+from Inpows.back_end.CGTree import CG_tree_node
 
 
 def complete_CG_node(node_name, tree, gg):
@@ -1589,7 +1589,7 @@ def final_cgt_check(final_CG_tree_list, gg):
     return min_tree_list
 
 
-from HISyn_copy.back_end.APITree import API_tree
+from Inpows.back_end.APITree import API_tree
 
 
 # tranform CG-tree to expression through API tree

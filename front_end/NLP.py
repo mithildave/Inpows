@@ -7,11 +7,11 @@
 from stanfordnlp.server import CoreNLPClient
 import os
 
-import HISyn_copy.tools.Log as log
+import Inpows.tools.Log as log
 
 import re
-from HISyn_copy.tools.root_directory import root_dir
-from HISyn_copy.tools.system_operations import check_sys_proc_exists_by_name
+from Inpows.tools.root_directory import root_dir
+from Inpows.tools.system_operations import check_sys_proc_exists_by_name
 
 # annotator_list = ['tokenize', 'ssplit', 'pos', 'lemma', 'ner', 'parse', 'depparse']
 # client = CoreNLPClient(annotators=annotator_list, timeout=60000, memory='8G')
