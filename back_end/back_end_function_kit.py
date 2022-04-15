@@ -1647,7 +1647,7 @@ def reversed_all_path_searching(domain, nlp, gg, dependent_dict):
     # All paths search
     if domain == 'ASTMatcher':
         reorder_dict = all_paths_search(nlp, gg, single_path_limit=10, reorder_shortest_select=True)
-        from HISyn.domain_knowledge.ASTMatcher.domain_specific_function_kit import set_shortest_path
+        from Inpows.domain_knowledge.ASTMatcher.domain_specific_function_kit import set_shortest_path
         set_shortest_path(nlp, length=10)
         # adf.set_shortest_path(nlp, length=10)
     else:
@@ -1658,7 +1658,7 @@ def reversed_all_path_searching(domain, nlp, gg, dependent_dict):
     # nlp.displayByEdge()
 
     # Special rules for flight domain
-    import HISyn.domain_knowledge.Flight.domain_specific_function_kit as fdf
+    import Inpows.domain_knowledge.Flight.domain_specific_function_kit as fdf
     if domain == 'Flight':
         fdf.lock_project(nlp, gg)
 

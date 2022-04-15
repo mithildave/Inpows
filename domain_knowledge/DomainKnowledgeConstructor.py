@@ -1,7 +1,7 @@
 import pickle
 import os.path
 import Inpows.tools.Log as log
-# import HISyn.tools.Log as log
+# import Inpows.tools.Log as log
 import Inpows.domain_knowledge.GrammarGraphBuilder as grammar_graph
 from Inpows.tools.root_directory import root_dir
 

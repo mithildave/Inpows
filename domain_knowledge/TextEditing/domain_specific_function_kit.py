@@ -1,4 +1,4 @@
-import HISyn.tools.Log as log
+import Inpows.tools.Log as log
 
 
 def parsing_rules(nlp, gg):

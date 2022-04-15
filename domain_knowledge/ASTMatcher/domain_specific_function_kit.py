@@ -1,4 +1,4 @@
-import HISyn.tools.Log as log
+import Inpows.tools.Log as log
 
 other_query_list = ['fare', 'time', 'airline', 'type', 'cost']
 question_word = ['what', 'which']

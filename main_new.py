@@ -87,25 +87,6 @@ if __name__ == '__main__':
     text = "get dataset with <hpc:Id 'DA00001'>"
     text = "get all dataset <hpc:fundedBy 'NSF' hpc:subject 'PerformancePrediction'>"
     text = "get machine <hpc:name 'NVIDIA_100' hpc:SoftwareArchitecture 'GPU'>'"
-    #text = "get AI model names of a <hpc:targetMachine 'lassen'>"
-    #text = "get AI model with <hpc:modelType 'Classification'>"
-    #text = "get AI model with <hpc:version '1.2.1' hpc:learningtype 'Classification'>"
-    #text = "get merging result of <X,> from dataset with<hpc:Project 'Xplacer'> "
-    #text = "get AI model with <hpc:type 'classification'>"
-
-
-    #text = "get AI model with <hpc:modelType 'Prediction' hpc:targetMachine hpc:lassen >"
-    #text = "get AI model with <hpc:learningType 'Supervised' hpc:subject 'Gradient Decent'>"
-    #text = "get AI model with <hpc:modelType 'Classification'>"
-    #text = "get AI model with <hpc:modelFormat 'PYTHON'>"
-    #text = "get AI model with <hpc:modelFormat 'PYTHON NOTEBOOK'>"
-    #text = "get AI model with <hpc:learningType 'Supervised' hpc:subject 'Gradient Decent'>"
-    #text = "get AI model with <hpc:modelType 'Prediction'>"
-
-    #text = "get AI model with <hpc:learningType 'Supervised' hpc:subject 'Gradient Decent'>"
-    #text = "get AI model with <hpc:modelType 'Prediction'>"
-    #text = "get AI model with <hpc:modelFormat 'PYTHON NOTEBOOK'>"
-
 
     text = "get dataset with <hpc:subject 'high-performance computing'>"
     text = "get dataset with <hpc:project hpc:name 'PR000001'>"
@@ -123,9 +104,6 @@ if __name__ == '__main__':
     text = "get person <hpc:affiliation 'Lawrence Livermore National Laboratory, CA'> "
     text = "get person <hpc:affiliation 'Lawrence Livermore National Laboratory, CA'> "
     text = "get person having <hpc:jobTitle 'Senior Computer Scientist' hpc:gender 'Male'>"
-
-    #Advance
-
 
     text = "Get software <<hpc:usedBy> <experiment hpc:name 'OPUM'>>"
     text = "Get all columns from the dataset with <hpc:name X> "
@@ -169,7 +147,6 @@ if __name__ == '__main__':
     text = 'return me AI model with "y"'
     text = "Get software which is <hpc:usedBy something> and <some> "
     text = "list of software having <name 'X'>"
-
 
     text = 'get column <schema:domainIncludes hpc:cpu> from file "X"'
     text = "give AI model <hpc:modelType 'Classification'>"
