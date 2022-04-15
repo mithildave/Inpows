@@ -1,5 +1,9 @@
 # transform prefix-tree to code generation tree
+<<<<<<< HEAD
 # from Inpows.back_end.back_end_function_kit import is_list_in
+=======
+# from HISyn.back_end.back_end_function_kit import is_list_in
+>>>>>>> e7ac5d8a592283969acfe27dc8ffc0c6223d6bdc
 import Inpows.tools.Log as log
 
 
