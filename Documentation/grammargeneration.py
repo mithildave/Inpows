@@ -1,8 +1,8 @@
 import sys
 import os
 sys.path.insert(0, '../..')
-from HISyn_copy.Documentation.GrammarGenerator import GrammarGenerator
-from HISyn_copy.tools.root_directory import root_dir
+from Inpows.Documentation.GrammarGenerator import GrammarGenerator
+from Inpows.tools.root_directory import root_dir
 
 gram_gen = GrammarGenerator()
 

@@ -5,8 +5,8 @@ from rdflib import URIRef
 from rdflib.namespace import RDF
 from rdflib.util import get_tree
 import re
-from HISyn_copy.tools.root_directory import root_dir
-import HISyn_copy.tools.Log as log
+from Inpows.tools.root_directory import root_dir
+import Inpows.tools.Log as log
 concpt = ["memLocal","memAtomic","wgSize","coalesced"]
 
 def loadOntology():

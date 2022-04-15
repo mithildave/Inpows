@@ -1,8 +1,8 @@
-import HISyn_copy.tools.Log as log
-import HISyn_copy.front_end.NLP as NLP
+import Inpows.tools.Log as log
+import Inpows.front_end.NLP as NLP
 
 import os
-from HISyn_copy.tools.root_directory import root_dir
+from Inpows.tools.root_directory import root_dir
 os.environ['CORENLP_HOME'] = root_dir + '/third_party_pkgs/stanford-corenlp-full-2018-10-05'
 
 # read text from file
@@ -30,7 +30,7 @@ def domain_specfic_parsing_rules(domain, nlp, gg):
     ds_func_path = root_dir + '/domain_knowledge/'+ domain + '/domain_specific_function_kit.py'
     if os.path.exists(ds_func_path):
         import importlib
-        ds_func_kit = importlib.import_module('HISyn_copy.domain_knowledge.' + domain +'.domain_specific_function_kit')
+        ds_func_kit = importlib.import_module('Inpows.domain_knowledge.' + domain +'.domain_specific_function_kit')
         ds_func_kit.parsing_rules(nlp, gg)
         log.log('domain specific rules applied.')
     else:

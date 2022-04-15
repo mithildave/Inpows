@@ -1,9 +1,9 @@
 import pickle
 import os.path
-import HISyn_copy.tools.Log as log
+import Inpows.tools.Log as log
 # import HISyn.tools.Log as log
-import HISyn_copy.domain_knowledge.GrammarGraphBuilder as grammar_graph
-from HISyn_copy.tools.root_directory import root_dir
+import Inpows.domain_knowledge.GrammarGraphBuilder as grammar_graph
+from Inpows.tools.root_directory import root_dir
 
 
 # call grammar graph builder to build grammar graph from file

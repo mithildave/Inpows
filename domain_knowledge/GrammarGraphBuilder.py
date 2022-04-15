@@ -1,4 +1,4 @@
-import HISyn_copy.tools.Log as log
+import Inpows.tools.Log as log
 
 # class for nt of grammar
 class NTNode:

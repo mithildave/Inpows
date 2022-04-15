@@ -1,5 +1,5 @@
-import HISyn_copy.tools.Log as log
-import HISyn_copy.back_end.back_end_function_kit as fc
+import Inpows.tools.Log as log
+import Inpows.back_end.back_end_function_kit as fc
 import re
 
 

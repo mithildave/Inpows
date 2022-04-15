@@ -1,6 +1,6 @@
 # transform prefix-tree to code generation tree
 # from HISyn.back_end.back_end_function_kit import is_list_in
-import HISyn_copy.tools.Log as log
+import Inpows.tools.Log as log
 
 
 def is_list_in(l1, l2):
